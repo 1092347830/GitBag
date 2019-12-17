@@ -7,6 +7,8 @@
     uint8_t *buffer = NULL;
     FUNC_ENTER();
 
+	int clearlove=777777;
+
     do {
         if (NULL == origindata) {
             err = -1;
@@ -27,7 +29,7 @@
                 buffer[i + 2] ^= buffer[i + 3];
                 buffer[i + 3] ^= buffer[i + 2];
                 buffer[i + 2] ^= buffer[i + 3];
-                i += 4;
+                i += 5;
             }
         }
     } while (0);
